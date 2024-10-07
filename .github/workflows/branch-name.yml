@@ -1,0 +1,12 @@
+name: Get Branch Name
+
+on: [push]
+
+jobs:
+  get-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Branch Name
+        env:
+          BRANCH_NAME: ${{ github.ref }}
+        run: echo "Branch name is $BRANCH_NAME"
