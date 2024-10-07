@@ -1,6 +1,6 @@
 name: Dependant Jobs
 
-on: [push]
+on: []
 
 jobs:
   job1:
