@@ -1,0 +1,19 @@
+name: Print Job Name
+
+on: [push]
+
+jobs:
+  print-job-name1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Job Name
+        env:
+          JOB_NAME: ${{ github.job }}
+        run: echo "Job name is $JOB_NAME"
+  print-job-name2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Job Name
+        env:
+          JOB_NAME: ${{ github.job }}
+        run: echo "Job name is $JOB_NAME"
